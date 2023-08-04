@@ -4,7 +4,7 @@ const data = require('../database/data.js');
 const router = express.Router();
 
 router.use(express.json());
-router.get('/:id', (req, res) => {
+router.get('/api/:id', (req, res) => {
     
     data.getEmployee(req.params.id)
   .then(data => {
