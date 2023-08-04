@@ -13,7 +13,7 @@ app.get('/message', (req, res) => {
   res.json({message:"welcome to the landing page"});  
 });
 
-app.get('/users', (req, res) => {
+app.get('/api/users', (req, res) => {
   res.json({users:"yeye", message:"testing"});
 });
 
